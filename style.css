@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-violot: #6d1d8e;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav li {
+    position: relative;
+    cursor: pointer;
+}
+
+nav li::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--col-violot);
+    position: absolute;
+    bottom: -3px;
+    scale: 0;
+    transition: 0.5s;
+}
+
+nav li:hover {
+    color: var(--col-violot);
+}
+
+nav li.active {
+    color: var(--col-violot);
+}
+
+nav li:hover::before {
+    scale: 1;
+}
+
+nav li.active::before {
+    scale: 1;
+}
+
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(222, 204, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner h1 {
+    color: var(--col-violot);
+}
+
+.banner h4 {
+    color: var(--col-violot);
+    font-weight: 700;
+}
+
+.banner .b-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner button {
+    width: 150px;
+    height: 45px;
+    background: var(--col-violot);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+
+/* ===Banner2 ====*/
+.b2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.b2 h1 {
+    font-size: 55px;
+    color: var(--col-violot);
+}
+
+.b2 .search {
+    width: 100%;
+    margin: 10px 150px;
+    border-bottom: 2px rgb(233, 230, 230) solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b2 .search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: rgb(173, 169, 169);
+    font-size: 25px;
+    padding: 0px 30px;
+}
+
+/* LT */
+.lt {
+    display: flex;
+    height: 760px;
+    background: rgb(247, 243, 244);
+}
+
+.lt img {
+    height: 760px;
+}
+
+
+.lt .points .icon {
+    height: 32px;
+    font-weight: bold;
+}
+
+.lt .texts {
+    padding-top: 50px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lt .texts h1 {
+    font-size: 65px;
+    color: var(--col-violot);
+}
+
+.lt .texts p {
+    font-size: 15px;
+}
+
+/* Cards */
+.training-program-column {
+    padding: 2.5rem 2rem .5rem 1rem;
+}
+
+.card {
+    /* width: 333px; */
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    min-height: 700px;
+    background: #c7c7c8;
+    border: none;
+}
+#card{
+    background: #f8f8f8;
+}
+.card:hover {
+    background-color: #fff;
+    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.card:hover #cardbtn {
+    background: var(--col-violot);
+    color: #fff;
+}
+
+.card:hover .svg {
+    background: var(--col-violot);
+}
+
+.card:hover .svg1 {
+    fill: #ececec;
+    stroke: #6d1d8e;
+}
+
+.card:hover .svg2 {
+    stroke: #ececec;
+    fill: #6d1d8e;
+}
+
+.card h1 {
+    font-size: 18px;
+    color: var(--col-violot);
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+
+}
+
+.card .d2 {
+    padding: 5px;
+}
+
+.card h5,
+span {
+    color: var(--col-violot);
+    font-weight: bold;
+}
+
+.card .svg {
+    width: 180px;
+    height: 150px;
+    background: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card .svg img {
+    width: 50%;
+    height: 50%;
+}
+
+.card button {
+    background-color: #fff;
+    width: 150px;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px solid #6d1d8e;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6d1d8e;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+
+.footer1 {
+    height: 572px;
+    background-image: url(./images/pen.png);
+    background-position: center;
+    padding-top: 100px;
+}
+
+.footer1 button {
+    border-radius: 50px;
+    width: 162px;
+    border: none;
+    font-weight: bold;
+    color: var(--col-violot);
+    font-size: 18px;
+    /* margin: 80px; */
+}
+
+/* footer */
+footer {
+    padding: 50px 180px;
+}
+
+footer img {
+    width: 180px;
+}
+
+footer .icons img {
+    width: 30px;
+}
+
+footer .iso {
+    display: flex;
+}
+
+footer .row1 {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: grey;
+}
+
+footer .row1 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--col-violot);
+    border-bottom: 1px solid var(--col-violot);
+    padding-bottom: 15px;
+}
+
+footer .row1 h4,
+strong {
+    color: var(--col-violot);
+}
+
+footer .row1 h4 {
+    font-size: 20px;
+}
+
+footer .row1 li {
+
+    margin-top: 20px;
+    width: 90%;
+    transition: 0.5s;
+}
+
+footer .row1 a:hover {
+    color: var(--col-violot);
+
+}
+
+footer .row1 li:hover {
+    color: var(--col-violot);
+    border-bottom: 1px solid var(--col-violot);
+
+}
+
+footer .row1 a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.footer2 b {
+    color: var(--col-violot);
+}
